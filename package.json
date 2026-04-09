@@ -1,0 +1,20 @@
+{
+  "name": "datong-skill",
+  "version": "0.1.0",
+  "description": "蒸馏孙中山先生「天下为公」的方法论智慧 —— AI Agent 思维工具集",
+  "keywords": [
+    "ai-agent-skill",
+    "persona-distillation",
+    "methodology",
+    "sun-yat-sen",
+    "datong",
+    "tianxia-weigong"
+  ],
+  "author": "datong-skill contributors",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EASYGOING45/datong-skill"
+  },
+  "skillEntrypoint": "skills/tianxia-weigong/SKILL.md"
+}
