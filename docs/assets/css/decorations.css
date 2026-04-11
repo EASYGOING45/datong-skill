@@ -1,0 +1,475 @@
+/* ============================================
+   大同 Skill —— 装饰层样式 v2
+   设计理念：克制、干净、有力、有历史感
+   ============================================ */
+
+/* ---------- Hero 区域 ---------- */
+.hero-new {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding-top: 64px;
+}
+
+.hero-new .hero-bg-gradient {
+  background: linear-gradient(
+    160deg,
+    #f7f3ec 0%,   /* 暖白宣纸色 */
+    #f0ebe0 50%,
+    #e8e0d0 100%
+  );
+}
+
+.hero-new .hero-bg-pattern {
+  background-image: none;
+}
+
+/* ---------- 右下角孙中山肖像 ---------- */
+.hero-portrait-corner {
+  position: absolute;
+  bottom: 6%;
+  right: 4%;
+  width: clamp(120px, 15vw, 200px);
+  pointer-events: none;
+  z-index: 3;
+  opacity: 0.8;
+  /* 轻微阴影，像一张相片 */
+  filter: drop-shadow(0 4px 16px rgba(0,0,0,0.12));
+  transition: opacity 0.3s ease;
+}
+
+.hero-portrait-corner:hover {
+  opacity: 0.95;
+}
+
+.hero-portrait-corner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 2px;
+  border: 1px solid rgba(0,0,0,0.08);
+  background: #f5f0e5;
+  padding: 3px;
+}
+
+/* ---------- 书法大字区域 ---------- */
+.hero-calligraphy {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.calligraphy-text {
+  /* 用宋体大字，比书法字体更稳重有力 */
+  font-family: 'Noto Serif SC', 'STSong', 'SimSun', serif;
+  font-size: clamp(4rem, 13vw, 10rem);
+  font-weight: 900;
+  color: #1a1a1a;
+  letter-spacing: 0.08em;
+  line-height: 1.0;
+  /* 深沉稳重的墨色，无多余修饰 */
+  text-shadow: none;
+  display: block;
+}
+
+.calligraphy-sub {
+  font-family: 'Noto Serif SC', serif;
+  font-size: clamp(0.9rem, 1.4vw, 1.1rem);
+  color: rgba(44, 44, 44, 0.35);
+  letter-spacing: 0.6em;
+  margin-top: 0.6rem;
+  display: block;
+  text-align: center;
+}
+
+/* ---------- Hero 内容区域 ---------- */
+.hero-title-area {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.hero-new .hero-desc {
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  color: rgba(44, 44, 44, 0.55);
+  line-height: 1.9;
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+.hero-new .hero-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  animation: fadeInUp 0.8s ease-out 0.5s both;
+}
+
+.hero-new .hero-scroll-hint {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.72rem;
+  color: rgba(44, 44, 44, 0.3);
+  letter-spacing: 0.12em;
+  z-index: 2;
+}
+
+/* ---------- Hero 水墨叠加层（极淡） ---------- */
+.hero-ink-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  background: 
+    /* 左下角淡淡光晕 */
+    radial-gradient(ellipse 50% 50% at 5% 90%, rgba(26, 95, 122, 0.025) 0%, transparent 60%),
+    /* 右下角孙中山肖像区域柔和补光 */
+    radial-gradient(ellipse 40% 60% at 88% 85%, rgba(201, 151, 26, 0.015) 0%, transparent 55%);
+}
+
+/* ---------- Hero 装饰圆环 ---------- */
+.hero-decoration {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.deco-circle {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(26, 95, 122, 0.05);
+}
+
+.deco-1 {
+  width: 500px;
+  height: 500px;
+  top: -150px;
+  right: -80px;
+  animation: float 20s ease-in-out infinite;
+}
+
+.deco-2 {
+  width: 300px;
+  height: 300px;
+  bottom: -80px;
+  left: -60px;
+  animation: float 15s ease-in-out infinite reverse;
+}
+
+.deco-3 {
+  width: 150px;
+  height: 150px;
+  top: 25%;
+  left: 8%;
+  background: rgba(201, 151, 26, 0.02);
+  animation: float 12s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translate(0, 0); }
+  33% { transform: translate(15px, -15px); }
+  66% { transform: translate(-8px, 10px); }
+}
+
+/* ---------- Hero 徽章（小圆点） ---------- */
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: rgba(44, 44, 44, 0.45);
+  background: rgba(255,255,255,0.6);
+  border: 1px solid rgba(26, 95, 122, 0.1);
+  padding: 0.35em 1.1em;
+  border-radius: 20px;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.04em;
+}
+
+.badge-dot {
+  width: 5px;
+  height: 5px;
+  background: #c9971a;
+  border-radius: 50%;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+/* ---------- Hero 引言 ---------- */
+.hero-quote {
+  font-family: 'Noto Serif SC', serif;
+  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+  font-style: italic;
+  color: rgba(44, 44, 44, 0.4);
+  border-left: 2px solid rgba(201, 151, 26, 0.4);
+  padding-left: 1rem;
+  margin: 1.5rem auto;
+  max-width: 520px;
+  text-align: left;
+  line-height: 1.7;
+}
+
+/* ---------- 中山纪念堂 SVG 背景（右下角悬浮，极淡）---------- */
+.hall-svg-bg {
+  position: fixed;
+  bottom: -4%;
+  right: 0;
+  width: 52vw;
+  max-width: 720px;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.7;
+}
+
+.hall-svg-bg svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ---------- 孙中山先生肖像展示（关于区域） ---------- */
+.sun-portrait-display {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+  padding: 1.1rem 1.25rem;
+  background: rgba(250, 246, 240, 0.5);
+  border: 1px solid rgba(26, 95, 122, 0.08);
+  border-radius: 8px;
+  backdrop-filter: blur(6px);
+  transition: all 0.3s ease;
+}
+
+.sun-portrait-display:hover {
+  background: rgba(250, 246, 240, 0.85);
+  border-color: rgba(26, 95, 122, 0.15);
+  transform: translateX(3px);
+  box-shadow: 0 4px 16px rgba(26, 95, 122, 0.06);
+}
+
+.portrait-frame {
+  width: 70px;
+  height: 105px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid rgba(26, 95, 122, 0.12);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  background: #f0ebe0;
+}
+
+.portrait-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.portrait-caption {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.portrait-caption strong {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  letter-spacing: 0.04em;
+}
+
+.portrait-caption span {
+  font-size: 0.72rem;
+  color: rgba(44, 44, 44, 0.4);
+  letter-spacing: 0.03em;
+}
+
+.portrait-caption p {
+  font-family: 'Noto Serif SC', serif;
+  font-style: italic;
+  font-size: 0.78rem;
+  color: rgba(184, 60, 44, 0.7);
+  margin-top: 0.35rem;
+  padding-left: 0.65rem;
+  border-left: 2px solid rgba(201, 151, 26, 0.5);
+  line-height: 1.5;
+}
+
+/* ---------- 关于区域纪念堂致敬框 ---------- */
+.memorial-hall-tribute {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.9rem 1.25rem;
+  background: rgba(26, 95, 122, 0.025);
+  border: 1px solid rgba(26, 95, 122, 0.08);
+  border-left: 2px solid rgba(26, 95, 122, 0.25);
+  border-radius: 0 6px 6px 0;
+  margin-top: 0.85rem;
+  transition: all 0.3s ease;
+}
+
+.memorial-hall-tribute:hover {
+  background: rgba(26, 95, 122, 0.04);
+  border-color: rgba(26, 95, 122, 0.15);
+  transform: translateX(3px);
+}
+
+.hall-icon {
+  width: 70px;
+  height: 52px;
+  flex-shrink: 0;
+}
+
+.tribute-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.12rem;
+}
+
+.tribute-text strong {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1a5f7a;
+}
+
+.tribute-text span {
+  font-size: 0.7rem;
+  color: rgba(44, 44, 44, 0.4);
+  letter-spacing: 0.02em;
+  line-height: 1.6;
+}
+
+/* ---------- 名言卡片 ---------- */
+.quote-card {
+  grid-column: 1 / -1;
+  padding: 1.25rem 1.5rem;
+  background: rgba(26, 95, 122, 0.025);
+  border: 1px solid rgba(26, 95, 122, 0.06);
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.quote-card::before {
+  content: '"';
+  position: absolute;
+  top: -8px;
+  left: 8px;
+  font-family: Georgia, serif;
+  font-size: 5rem;
+  color: #1a5f7a;
+  opacity: 0.06;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.quote-card p {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 0.88rem;
+  font-style: italic;
+  color: rgba(44, 44, 44, 0.7);
+  line-height: 1.7;
+  margin-bottom: 0.4rem;
+  position: relative;
+}
+
+.quote-card cite {
+  font-size: 0.72rem;
+  color: rgba(184, 60, 44, 0.6);
+  font-style: normal;
+}
+
+/* ---------- 响应式 ---------- */
+@media (max-width: 1100px) {
+  .hall-svg-bg {
+    width: 48vw;
+    opacity: 0.55;
+  }
+  
+  .hero-portrait-corner {
+    width: clamp(100px, 13vw, 160px);
+    opacity: 0.65;
+  }
+}
+
+@media (max-width: 800px) {
+  .hero-portrait-corner {
+    width: 100px;
+    bottom: 4%;
+    right: 2%;
+    opacity: 0.55;
+  }
+  
+  .hall-svg-bg {
+    width: 65vw;
+    opacity: 0.4;
+  }
+  
+  .calligraphy-text {
+    font-size: clamp(3rem, 12vw, 6rem);
+  }
+}
+
+@media (max-width: 560px) {
+  .hall-svg-bg {
+    width: 80vw;
+    opacity: 0.25;
+  }
+  
+  .hero-portrait-corner {
+    width: 80px;
+    opacity: 0.45;
+  }
+  
+  .sun-portrait-display {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .portrait-caption p {
+    border-left: none;
+    padding-left: 0;
+    border-top: 2px solid rgba(201, 151, 26, 0.4);
+    padding-top: 0.4rem;
+  }
+  
+  .memorial-hall-tribute {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* ---------- 打印样式 ---------- */
+@media print {
+  .hall-svg-bg,
+  .hero-portrait-corner,
+  .hero-ink-overlay {
+    display: none !important;
+  }
+}
