@@ -24,7 +24,7 @@
 - [ ] **quickstart-guide** — 编写快速上手指南，降低新用户使用门槛
 - [ ] **skill-enhancement** — 各 skill 补充「操作模板」和「决策树」等实用附件
 - [ ] **windows-testing** — 补充 Windows 端 hook 验证测试
-- [ ] **github-workflow** — 补充 GitHub Actions 自动化验证 workflow
+- [x] **github-workflow** — GitHub Actions CI/CD 自动化验证 ✅ (2026-04-15)
 - [ ] **methodology-audit** — 各 skill 增加 self-review checklist（方法论自审清单）
 - [ ] **publish-clawhub** — 发布到 ClawHub 开放安装
 - [ ] **publish-huggingface** — 发布到 Hugging Face Spaces（备选分发渠道）
