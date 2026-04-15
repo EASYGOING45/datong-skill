@@ -2,6 +2,7 @@
   <img src="assets/logo_main.png" width="400"/>
 </p>
 
+[![CI](https://github.com/EASYGOING45/datong-skill/actions/workflows/ci.yml/badge.svg)](https://github.com/EASYGOING45/datong-skill/actions/workflows/ci.yml)
 [🚀 快速上手（5 分钟）](./docs/QUICKSTART.md)
 
 # 大同.Skill —— 天下为公
