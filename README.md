@@ -2,6 +2,8 @@
   <img src="assets/logo_main.png" width="400"/>
 </p>
 
+[🚀 快速上手（5 分钟）](./docs/QUICKSTART.md)
+
 # 大同.Skill —— 天下为公
 
 > "吾志所向，一往无前；愈挫愈奋，再接再励。"
