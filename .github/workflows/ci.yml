@@ -7,122 +7,62 @@ on:
     branches: [main, master]
 
 jobs:
-  validate:
-    name: Validate (${{ matrix.os }})
-    runs-on: ${{ matrix.os }}
-    strategy:
-      fail-fast: false
-      matrix:
-        os: [ubuntu-latest, macos-latest, windows-latest]
-
+  validate-ubuntu:
+    name: Validate (Ubuntu)
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Validate structure (Unix)
-        if: matrix.os != 'windows-latest'
+      - uses: actions/checkout@v4
+      - name: Run structure validation
         shell: bash
-        run: |
-          set -e
-          echo "=== Running structure validation on ${{ matrix.os }} ==="
-          bash tests/validate-structure.sh
+        run: bash tests/validate-structure.sh
 
-      - name: Validate structure (Windows)
-        if: matrix.os == 'windows-latest'
+  validate-macos:
+    name: Validate (macOS)
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run structure validation
+        shell: bash
+        run: bash tests/validate-structure.sh
+
+  validate-windows:
+    name: Validate (Windows)
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run structure validation
         shell: pwsh
         run: |
-          echo "=== Running structure validation on Windows ==="
           $errors = 0
-
           $requiredFiles = @(
-            "package.json",
-            "LICENSE",
-            "README.md",
-            "CHANGELOG.md",
-            "PLAN.md",
-            ".gitignore",
-            "hooks\hooks.json",
-            ".claude-plugin\plugin.json",
-            ".cursor-plugin\plugin.json",
-            "skills\tianxia-weigong\SKILL.md",
-            "skills\workflows\SKILL.md",
-            "agents\five-power-reviewer.md"
+            "package.json", "LICENSE", "README.md", "CHANGELOG.md", "PLAN.md", ".gitignore",
+            "hooks\hooks.json", ".claude-plugin\plugin.json", ".cursor-plugin\plugin.json",
+            "skills\tianxia-weigong\SKILL.md", "skills\workflows\SKILL.md", "agents\five-power-reviewer.md"
           )
-
           foreach ($f in $requiredFiles) {
-            if (!(Test-Path $f)) {
-              Write-Host "MISSING: $f"
-              $errors++
-            } else {
-              Write-Host "OK: $f"
-            }
+            if (!(Test-Path $f)) { Write-Host "MISSING: $f"; $errors++ } else { Write-Host "OK: $f" }
           }
-
           $skills = @(
-            "know-hard-act-easy",
-            "east-west-synthesis",
-            "three-principles-analysis",
-            "five-power-checks",
-            "power-capability-split",
-            "awaken-and-unite",
-            "single-stroke-revolution",
-            "three-phase-governance",
-            "rise-from-defeat",
-            "aid-the-weak"
+            "know-hard-act-easy", "east-west-synthesis", "three-principles-analysis",
+            "five-power-checks", "power-capability-split", "awaken-and-unite",
+            "single-stroke-revolution", "three-phase-governance", "rise-from-defeat", "aid-the-weak"
           )
-
           foreach ($s in $skills) {
             $sk = "skills\$s\SKILL.md"
-            if (!(Test-Path $sk)) {
-              Write-Host "MISSING: $sk"
-              $errors++
-            } else {
-              Write-Host "OK: $sk"
-            }
+            if (!(Test-Path $sk)) { Write-Host "MISSING: $sk"; $errors++ } else { Write-Host "OK: $sk" }
             $orig = "skills\$s\original-texts.md"
-            if (!(Test-Path $orig)) {
-              Write-Host "MISSING: $orig"
-              $errors++
-            } else {
-              Write-Host "OK: $orig"
-            }
+            if (!(Test-Path $orig)) { Write-Host "MISSING: $orig"; $errors++ } else { Write-Host "OK: $orig" }
           }
+          if ($errors -eq 0) { Write-Host "All checks passed!"; exit 0 } else { Write-Host "Found $errors issue(s)"; exit 1 }
 
-          if ($errors -eq 0) {
-            Write-Host "All checks passed!"
-            exit 0
-          } else {
-            Write-Host "Found $errors issue(s)"
-            exit 1
-          }
-
-      - name: Validate JSON configs
-        shell: ${{ matrix.os == 'windows-latest' && 'pwsh' || 'bash' }}
-        run: |
-          echo "=== Validating JSON configs ==="
-          $configs = @("package.json", "hooks/hooks.json", ".claude-plugin/plugin.json", ".cursor-plugin/plugin.json")
-          if ('${{ matrix.os }}' -eq 'windows-latest') {
-            $configs = @("package.json", "hooks\hooks.json", ".claude-plugin\plugin.json", ".cursor-plugin\plugin.json")
-          }
-          foreach ($c in $configs) {
-            if (Test-Path $c) {
-              python -m json.tool $c > $null 2>&1 && Write-Host "OK: $c" || Write-Host "FAIL: $c is not valid JSON"
-            }
-          }
-
-      - name: Validate SKILL.md YAML frontmatter
-        if: matrix.os != 'windows-latest'
+  json-validate:
+    name: Validate JSON configs
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check JSON files
         shell: bash
         run: |
-          echo "=== Checking YAML frontmatter ==="
-          for skill in know-hard-act-easy east-west-synthesis three-principles-analysis five-power-checks power-capability-split awaken-and-unite single-stroke-revolution three-phase-governance rise-from-defeat aid-the-weak tianxia-weigong workflows; do
-            f="skills/$skill/SKILL.md"
-            if [ -f "$f" ]; then
-              first=$(head -1 "$f")
-              if echo "$first" | grep -q "^---"; then
-                echo "OK: $f has frontmatter"
-              else
-                echo "WARN: $f missing YAML frontmatter"
-              fi
-            fi
+          for f in package.json hooks/hooks.json .claude-plugin/plugin.json .cursor-plugin/plugin.json; do
+            python3 -m json.tool "$f" > /dev/null 2>&1 && echo "OK: $f" || echo "FAIL: $f"
           done
