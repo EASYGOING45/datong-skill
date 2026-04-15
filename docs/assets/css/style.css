@@ -1308,3 +1308,469 @@ img {
   clip: rect(0,0,0,0);
   white-space: nowrap;
 }
+
+/* ---------- Hero Calligraphy ---------- */
+.hero-calligraphy {
+  margin-bottom: 2.5rem;
+}
+
+.calligraphy-text {
+  font-family: 'Noto Serif SC', serif;
+  font-size: clamp(3.5rem, 10vw, 7rem);
+  font-weight: 900;
+  color: var(--color-primary);
+  letter-spacing: 0.15em;
+  text-shadow: 0 2px 20px rgba(26, 95, 122, 0.12);
+  line-height: 1.1;
+  animation: fadeInUp 0.8s ease-out both;
+}
+
+.calligraphy-sub {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  letter-spacing: 0.5em;
+  margin-top: 0.5rem;
+  animation: fadeInUp 0.8s ease-out 0.15s both;
+}
+
+.hero-title-area {
+  animation: fadeInUp 0.8s ease-out 0.3s both;
+}
+
+/* ---------- Scenarios ---------- */
+.scenarios-section {
+  background: var(--color-bg-alt);
+}
+
+.scenario-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.25rem;
+}
+
+.scenario-card {
+  background: var(--color-bg-card);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  border: 1px solid rgba(0,0,0,0.06);
+  transition: 0.3s ease;
+  cursor: default;
+}
+
+.scenario-card:hover {
+  border-color: var(--color-primary);
+  box-shadow: 0 4px 20px rgba(26,95,122,0.1);
+  transform: translateY(-2px);
+}
+
+.scenario-icon {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.scenario-card h3 {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 0.4rem;
+  line-height: 1.3;
+}
+
+.scenario-card > p {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.scenario-match {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.match-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: white;
+  background: var(--color-primary);
+  padding: 0.2em 0.7em;
+  border-radius: 20px;
+}
+
+.match-methodology {
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.scenario-detail {
+  border-top: 1px solid rgba(0,0,0,0.06);
+  padding-top: 0.75rem;
+  display: none;
+}
+
+.scenario-card:hover .scenario-detail {
+  display: block;
+}
+
+.scenario-detail p {
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.scenario-detail blockquote {
+  font-family: var(--font-serif);
+  font-size: 0.75rem;
+  font-style: italic;
+  color: var(--color-secondary);
+  border-left: 2px solid var(--color-accent);
+  padding-left: 0.6rem;
+  opacity: 0.85;
+}
+
+/* ---------- Accordion ---------- */
+.details-section {
+  background: var(--color-bg);
+}
+
+.accordion {
+  max-width: 860px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.accordion-item {
+  background: var(--color-bg-card);
+  border: 1px solid rgba(0,0,0,0.07);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.accordion-item:hover {
+  border-color: rgba(26,95,122,0.2);
+}
+
+.accordion-item.open {
+  border-color: var(--color-primary);
+  box-shadow: 0 4px 20px rgba(26,95,122,0.1);
+}
+
+.accordion-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  gap: 1rem;
+  transition: background 0.2s;
+}
+
+.accordion-header:hover {
+  background: rgba(26,95,122,0.03);
+}
+
+.accordion-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.accordion-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  opacity: 0.25;
+  line-height: 1;
+  min-width: 2.5rem;
+}
+
+.accordion-title h3 {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 0.15rem;
+}
+
+.accordion-alias {
+  font-size: 0.78rem;
+  color: var(--color-text-light);
+  font-style: italic;
+}
+
+.accordion-icon {
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  font-weight: 300;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.accordion-item.open .accordion-icon {
+  transform: rotate(45deg);
+}
+
+.accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.accordion-item.open .accordion-body {
+  max-height: 1000px;
+}
+
+.accordion-content {
+  padding: 0 1.5rem 1.5rem;
+  border-top: 1px solid rgba(0,0,0,0.05);
+  padding-top: 1.25rem;
+}
+
+.accordion-content .skill-lead {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+}
+
+.accordion-content h4 {
+  font-family: var(--font-serif);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 1.25rem 0 0.5rem;
+  letter-spacing: 0.05em;
+}
+
+.accordion-content h4:first-child {
+  margin-top: 0;
+}
+
+.accordion-content ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.accordion-content li {
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+  padding-left: 1em;
+  position: relative;
+  line-height: 1.6;
+}
+
+.accordion-content li::before {
+  content: '·';
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.accordion-content p {
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  margin-bottom: 0.5rem;
+}
+
+.accordion-content blockquote {
+  font-family: var(--font-serif);
+  font-size: 0.82rem;
+  font-style: italic;
+  color: var(--color-secondary);
+  border-left: 2px solid var(--color-accent);
+  padding-left: 0.75rem;
+  margin: 0.6rem 0;
+  opacity: 0.9;
+}
+
+/* ---------- How to Use ---------- */
+.how-to-use-section {
+  background: var(--color-bg-alt);
+}
+
+.how-to-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.how-to-card {
+  background: var(--color-bg-card);
+  border-radius: var(--radius-xl);
+  padding: 1.75rem;
+  border: 1px solid rgba(0,0,0,0.06);
+  transition: 0.3s ease;
+}
+
+.how-to-card:hover {
+  border-color: rgba(26,95,122,0.2);
+  box-shadow: 0 4px 20px rgba(26,95,122,0.08);
+  transform: translateY(-2px);
+}
+
+.how-to-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.how-to-card h3 {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 0.6rem;
+}
+
+.how-to-desc {
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.how-to-example {
+  background: var(--color-bg);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+}
+
+.example-q {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.3rem;
+}
+
+.example-text {
+  font-style: italic;
+  color: var(--color-text);
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.example-a {
+  color: var(--color-primary);
+  font-size: 0.82rem;
+}
+
+.how-to-step {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.how-to-step ul {
+  list-style: none;
+  margin-top: 0.4rem;
+}
+
+.how-to-step li {
+  padding-left: 1em;
+  position: relative;
+  margin-bottom: 0.2rem;
+}
+
+.how-to-step li::before {
+  content: '·';
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+}
+
+.how-to-code {
+  background: #1e1e1e;
+  border-radius: var(--radius-md);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.how-to-code code {
+  font-family: 'SF Mono', 'Cascadia Code', monospace;
+  font-size: 0.8rem;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+.how-to-flow {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.flow-step {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  display: flex;
+  gap: 0.5rem;
+  align-items: baseline;
+}
+
+.flow-step span {
+  color: var(--color-text-light);
+  font-style: italic;
+}
+
+/* ---------- Install Intro ---------- */
+.install-intro {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  margin-bottom: 1rem;
+}
+
+.install-intro + h4 {
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 0.75rem;
+}
+
+/* ---------- Mobile overrides ---------- */
+@media (max-width: 768px) {
+  .scenario-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .scenario-card:hover .scenario-detail {
+    display: block;
+  }
+
+  .how-to-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .accordion-header {
+    padding: 1rem;
+  }
+
+  .accordion-content {
+    padding: 1rem;
+  }
+}

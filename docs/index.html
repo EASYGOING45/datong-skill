@@ -4,49 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>大同 Skill —— 天下为公 · AI Agent 方法论工具集</title>
-  <meta name="description" content="蒸馏孙中山先生四十年革命生涯的方法论智慧，为 AI Agent 提供分析力、设计力与韧性。知难行易，融贯中西，天下为公。">
+  <meta name="description" content="从孙中山先生四十年革命生涯中蒸馏出的方法论智慧，为 AI Agent 提供分析力、设计力与韧性。知难行易，融贯中西，天下为公。">
   
-  <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/logo_main.png">
   
-  <!-- Fonts: Noto Serif/Sans + Playfair Display -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/decorations.css">
 </head>
 <body>
-
-  <!-- ============ DECORATIVE SVG LAYER ============ -->
-  <!-- 中山纪念堂 SVG 背景（右下角悬浮） -->
-  <div class="hall-svg-bg" aria-hidden="true">
-    <svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMax meet">
-      <rect x="150" y="420" width="500" height="20" fill="#1a5f7a" opacity="0.06"/>
-      <rect x="200" y="400" width="400" height="25" fill="#e8e0d0" opacity="0.12"/>
-      <rect x="220" y="385" width="360" height="20" fill="#e8e0d0" opacity="0.1"/>
-      <rect x="210" y="260" width="16" height="130" fill="#b83c2c" opacity="0.07"/>
-      <rect x="260" y="260" width="16" height="130" fill="#b83c2c" opacity="0.07"/>
-      <rect x="310" y="260" width="16" height="130" fill="#b83c2c" opacity="0.07"/>
-      <rect x="360" y="260" width="16" height="130" fill="#b83c2c" opacity="0.07"/>
-      <rect x="410" y="260" width="16" height="130" fill="#b83c2c" opacity="0.07"/>
-      <rect x="460" y="260" width="16" height="130" fill="#b83c2c" opacity="0.07"/>
-      <rect x="510" y="260" width="16" height="130" fill="#b83c2c" opacity="0.07"/>
-      <rect x="560" y="260" width="16" height="130" fill="#b83c2c" opacity="0.07"/>
-      <polygon points="400,140 250,260 550,260" fill="#1a5f7a" opacity="0.07"/>
-      <polygon points="400,160 280,250 520,250" fill="#1a5f7a" opacity="0.1"/>
-      <polygon points="400,180 300,240 500,240" fill="#1a5f7a" opacity="0.12"/>
-      <circle cx="400" cy="145" r="12" fill="#c9971a" opacity="0.18"/>
-      <circle cx="400" cy="145" r="6" fill="#c9971a" opacity="0.25"/>
-      <polygon points="200,380 200,300 160,280 160,380" fill="#1a5f7a" opacity="0.05"/>
-      <polygon points="600,380 600,300 640,280 640,380" fill="#1a5f7a" opacity="0.05"/>
-      <rect x="350" y="320" width="100" height="70" rx="50" ry="50" fill="#1a5f7a" opacity="0.04"/>
-      <rect x="350" y="230" width="100" height="18" rx="3" fill="#c9971a" opacity="0.12"/>
-      <path d="M280,250 Q340,235 400,225 Q460,235 520,250" stroke="#1a5f7a" stroke-width="3" fill="none" opacity="0.08"/>
-      <text x="400" y="445" text-anchor="middle" font-family="serif" font-size="14" fill="#1a5f7a" opacity="0.1" letter-spacing="4">中山纪念堂</text>
-    </svg>
-  </div>
 
   <!-- ============ HEADER ============ -->
   <header class="site-header" id="site-header">
@@ -56,11 +24,11 @@
         <span class="logo-text">大同<span class="logo-accent">Skill</span></span>
       </a>
       <nav class="main-nav" id="main-nav">
-        <a href="#hero" class="nav-link active">首页</a>
-        <a href="#methodology" class="nav-link">方法论</a>
-        <a href="#skills" class="nav-link">十大工具</a>
+        <a href="#scenarios" class="nav-link">按场景找方法</a>
+        <a href="#methodology" class="nav-link">方法论体系</a>
+        <a href="#details" class="nav-link">十大工具</a>
+        <a href="#how-to-use" class="nav-link">如何使用</a>
         <a href="#install" class="nav-link">安装</a>
-        <a href="#about" class="nav-link">关于</a>
       </nav>
       <button class="nav-toggle" id="nav-toggle" aria-label="导航菜单">
         <span></span><span></span><span></span>
@@ -69,21 +37,8 @@
   </header>
 
   <!-- ============ HERO ============ -->
-  <section class="hero hero-new" id="hero">
+  <section class="hero" id="hero">
     <div class="hero-bg-pattern"></div>
-    <div class="hero-bg-gradient"></div>
-    <div class="hero-ink-overlay"></div>
-    <div class="hero-decoration">
-      <div class="deco-circle deco-1"></div>
-      <div class="deco-circle deco-2"></div>
-      <div class="deco-circle deco-3"></div>
-    </div>
-    
-    <!-- 右下角孙中山肖像 -->
-    <div class="hero-portrait-corner" aria-label="孙中山先生">
-      <img src="assets/logo_main.png" alt="孙中山先生肖像">
-    </div>
-    
     <div class="container hero-content">
       <div class="hero-calligraphy" aria-label="天下为公">
         <div class="calligraphy-text">天下为公</div>
@@ -93,21 +48,169 @@
       <div class="hero-title-area">
         <div class="hero-badge">
           <span class="badge-dot"></span>
-          AI Agent 方法论工具集 · v0.1.0
+          AI Agent 方法论工具集 · v0.2.0
         </div>
         <p class="hero-desc">
-          从孙中山先生四十年革命生涯中蒸馏出的方法论智慧<br>
-          十条思维工具，助 AI Agent 穿越不确定、做出好设计、保持韧性
+          十条思维工具，助 AI 穿越不确定、做出好设计、保持韧性<br>
+          不是口号，不是鸡汤，而是有据可依的方法论
         </p>
         <div class="hero-actions">
-          <a href="#install" class="btn btn-primary">快速安装</a>
-          <a href="#methodology" class="btn btn-outline">了解方法论</a>
+          <a href="#scenarios" class="btn btn-primary">我有这个问题 →</a>
+          <a href="#how-to-use" class="btn btn-outline">了解怎么用</a>
         </div>
       </div>
-      
-      <div class="hero-scroll-hint">
-        <span>向下探索</span>
-        <div class="scroll-arrow">▼</div>
+    </div>
+  </section>
+
+  <!-- ============ SCENARIOS: 按场景找方法论 ============ -->
+  <section class="section scenarios-section" id="scenarios">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">核心功能</span>
+        <h2 class="section-title">遇到问题？先找场景，再选方法</h2>
+        <p class="section-desc">选一个最接近你当前困境的描述，系统推荐最合适的方法论</p>
+      </div>
+
+      <div class="scenario-grid">
+        <div class="scenario-card" data-scenarios="模糊,迷茫,无从下手,不知道从哪开始">
+          <div class="scenario-icon">🧭</div>
+          <h3>需求模糊，不知道从哪开始</h3>
+          <p>方向不清晰，无从下手，越想越乱</p>
+          <div class="scenario-match">
+            <span class="match-label">推荐</span>
+            <span class="match-methodology">知难行易</span>
+          </div>
+          <div class="scenario-detail">
+            <p>核心思路：先行动获取反馈，再修正认知。不要等完美方案，想清楚"最难的那一步是什么"就够了。</p>
+            <blockquote>"知之非艰，行之惟艰，此古人之大谬也。" —— 孙中山</blockquote>
+          </div>
+        </div>
+
+        <div class="scenario-card" data-scenarios="纠结,选择,方案对比,选哪个好">
+          <div class="scenario-icon">⚖️</div>
+          <h3>两个方案纠结，不知道选哪个</h3>
+          <p>各有道理，陷入分析瘫痪</p>
+          <div class="scenario-match">
+            <span class="match-label">推荐</span>
+            <span class="match-methodology">三民框架</span>
+          </div>
+          <div class="scenario-detail">
+            <p>核心思路：从三个维度审视——谁所有（民族）、谁治理（民权）、谁受益（民生）。三维一贯，缺一不可。</p>
+            <blockquote>"民有、民治、民享。" —— 孙中山</blockquote>
+          </div>
+        </div>
+
+        <div class="scenario-card" data-scenarios="多人,协作,权责,团队冲突,推诿">
+          <div class="scenario-icon">🔱</div>
+          <h3>多人协作，权责不清</h3>
+          <p>决策、执行、审查混在一起，谁都说是别人的问题</p>
+          <div class="scenario-match">
+            <span class="match-label">推荐</span>
+            <span class="match-methodology">五权制衡</span>
+          </div>
+          <div class="scenario-detail">
+            <p>核心思路：五种职能（执行/规划/验证/选拔/监察）应当分离，避免既当运动员又当裁判员。</p>
+            <blockquote>"在外国的规模之上更加一层中国的特色。" —— 孙中山</blockquote>
+          </div>
+        </div>
+
+        <div class="scenario-card" data-scenarios="架构,系统设计,边界,权限">
+          <div class="scenario-icon">🏛️</div>
+          <h3>系统设计，架构边界摇摆</h3>
+          <p>不知道哪些该自己做，哪些该放出去</p>
+          <div class="scenario-match">
+            <span class="match-label">推荐</span>
+            <span class="match-methodology">权能区分</span>
+          </div>
+          <div class="scenario-detail">
+            <p>核心思路：明确区分决策权（属于用户/资方）和执行力（属于执行者/AI）。既不越权，也不推责。</p>
+            <blockquote>"用人民的四个政权，来管理政府的五个治权。" —— 孙中山</blockquote>
+          </div>
+        </div>
+
+        <div class="scenario-card" data-scenarios="变革,推动,阻力,别人不听">
+          <div class="scenario-icon">📣</div>
+          <h3>要推动一个变革，遇到阻力</h3>
+          <p>方案是好的，但别人不买账，不知道怎么推进</p>
+          <div class="scenario-match">
+            <span class="match-label">推荐</span>
+            <span class="match-methodology">唤起民众</span>
+          </div>
+          <div class="scenario-detail">
+            <p>核心思路：孤军不可能成功。要做两件事——唤起相关方理解并愿意参与；找到"以平等待我"的力量建立联盟。</p>
+            <blockquote>"必须唤起民众及联合世界上以平等待我之民族，共同奋斗。" —— 孙中山</blockquote>
+          </div>
+        </div>
+
+        <div class="scenario-card" data-scenarios="大项目,复杂,无从拆解,压垮">
+          <div class="scenario-icon">⚡</div>
+          <h3>大项目压得喘不过气，不知道怎么拆解</h3>
+          <p>问题太多太杂，不知道从哪切入</p>
+          <div class="scenario-match">
+            <span class="match-label">推荐</span>
+            <span class="match-methodology">毕其功于一役</span>
+          </div>
+          <div class="scenario-detail">
+            <p>核心思路：多个维度互相关联时，不要枝节修补，集中资源一次性系统解决，撕开突破口。</p>
+            <blockquote>"要把工业革命与社会革命，毕其功于一役。" —— 孙中山</blockquote>
+          </div>
+        </div>
+
+        <div class="scenario-card" data-scenarios="分阶段,节奏,优先级,先做什么">
+          <div class="scenario-icon">📊</div>
+          <h3>事情太多，分不清主次节奏</h3>
+          <p>资源有限，不知道先做哪个，怎么排优先级</p>
+          <div class="scenario-match">
+            <span class="match-label">推荐</span>
+            <span class="match-methodology">三阶段推进</span>
+          </div>
+          <div class="scenario-detail">
+            <p>核心思路：任何深刻变革经历三阶段——破旧立新期 → 教育培养期 → 制度自治期。急于跳过中间阶段，制度就无法扎根。</p>
+            <blockquote>"军政→训政→宪政" —— 孙中山</blockquote>
+          </div>
+        </div>
+
+        <div class="scenario-card" data-scenarios="失败,挫折,放弃,气馁,信心">
+          <div class="scenario-icon">🔥</div>
+          <h3>遇到重大挫折，想放弃</h3>
+          <p>方案被否、反复失败、信心受挫</p>
+          <div class="scenario-match">
+            <span class="match-label">推荐</span>
+            <span class="match-methodology">愈挫愈奋</span>
+          </div>
+          <div class="scenario-detail">
+            <p>核心思路：失败不是终点，是认识深化的过程。每次失败后总结经验、调整方法、重新出发。</p>
+            <blockquote>"革命尚未成功，同志仍须努力。" —— 孙中山 · 总理遗嘱（1925）</blockquote>
+          </div>
+        </div>
+
+        <div class="scenario-card" data-scenarios="帮助,指导,培养,赋能">
+          <div class="scenario-icon">🌱</div>
+          <h3>要帮助别人成长，但不知道怎么做</h3>
+          <p>想赋能团队或他人，但不知道从哪入手</p>
+          <div class="scenario-match">
+            <span class="match-label">推荐</span>
+            <span class="match-methodology">济弱扶倾</span>
+          </div>
+          <div class="scenario-detail">
+            <p>核心思路：不是直接给答案，而是引导他自己站起来。强者有责任帮助弱者，但帮的方式是让对方变强。</p>
+            <blockquote>"聪明才智越大者，当服千万人之务，造千万人之福。" —— 孙中山</blockquote>
+          </div>
+        </div>
+
+        <div class="scenario-card" data-scenarios="中西方,国外,本地化,融合">
+          <div class="scenario-icon">🔄</div>
+          <h3>中西方方案打架，不知道怎么融合</h3>
+          <p>外国方法好，但不知道能不能本地化</p>
+          <div class="scenario-match">
+            <span class="match-label">推荐</span>
+            <span class="match-methodology">融贯中西</span>
+          </div>
+          <div class="scenario-detail">
+            <p>核心思路：取各家之长融为己用，但融合的前提是深入理解双方，而非浮光掠影或简单二选一。</p>
+            <blockquote>"固有的东西，如果是好的，当然是要保存，不好的才可以放弃。" —— 孙中山</blockquote>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -122,7 +225,7 @@
       </div>
       
       <div class="pyramid">
-        <div class="pyramid-layer layer-spirit" data-layer="4">
+        <div class="pyramid-layer layer-spirit">
           <div class="layer-inner">
             <span class="layer-num">④</span>
             <div class="layer-content">
@@ -131,7 +234,7 @@
             </div>
           </div>
         </div>
-        <div class="pyramid-layer layer-strategy" data-layer="3">
+        <div class="pyramid-layer layer-strategy">
           <div class="layer-inner">
             <span class="layer-num">③</span>
             <div class="layer-content">
@@ -140,7 +243,7 @@
             </div>
           </div>
         </div>
-        <div class="pyramid-layer layer-governance" data-layer="2">
+        <div class="pyramid-layer layer-governance">
           <div class="layer-inner">
             <span class="layer-num">②</span>
             <div class="layer-content">
@@ -149,7 +252,7 @@
             </div>
           </div>
         </div>
-        <div class="pyramid-layer layer-epistemology" data-layer="1">
+        <div class="pyramid-layer layer-epistemology">
           <div class="layer-inner">
             <span class="layer-num">①</span>
             <div class="layer-content">
@@ -168,131 +271,493 @@
       </div>
 
       <div class="method-cards-mini">
-        <div class="method-mini-card" onclick="document.getElementById('skills').scrollIntoView({behavior:'smooth'})"><span class="mini-num">①</span><span>知难行易</span></div>
-        <div class="method-mini-card" onclick="document.getElementById('skills').scrollIntoView({behavior:'smooth'})"><span class="mini-num">②</span><span>融贯中西</span></div>
-        <div class="method-mini-card" onclick="document.getElementById('skills').scrollIntoView({behavior:'smooth'})"><span class="mini-num">③</span><span>三民框架</span></div>
-        <div class="method-mini-card" onclick="document.getElementById('skills').scrollIntoView({behavior:'smooth'})"><span class="mini-num">④</span><span>五权制衡</span></div>
-        <div class="method-mini-card" onclick="document.getElementById('skills').scrollIntoView({behavior:'smooth'})"><span class="mini-num">⑤</span><span>权能区分</span></div>
-        <div class="method-mini-card" onclick="document.getElementById('skills').scrollIntoView({behavior:'smooth'})"><span class="mini-num">⑥</span><span>唤起民众</span></div>
-        <div class="method-mini-card" onclick="document.getElementById('skills').scrollIntoView({behavior:'smooth'})"><span class="mini-num">⑦</span><span>毕其功于一役</span></div>
-        <div class="method-mini-card" onclick="document.getElementById('skills').scrollIntoView({behavior:'smooth'})"><span class="mini-num">⑧</span><span>三阶段推进</span></div>
-        <div class="method-mini-card" onclick="document.getElementById('skills').scrollIntoView({behavior:'smooth'})"><span class="mini-num">⑨</span><span>愈挫愈奋</span></div>
-        <div class="method-mini-card" onclick="document.getElementById('skills').scrollIntoView({behavior:'smooth'})"><span class="mini-num">⑩</span><span>济弱扶倾</span></div>
+        <span class="method-mini-card">①知难行易</span>
+        <span class="method-mini-card">②融贯中西</span>
+        <span class="method-mini-card">③三民框架</span>
+        <span class="method-mini-card">④五权制衡</span>
+        <span class="method-mini-card">⑤权能区分</span>
+        <span class="method-mini-card">⑥唤起民众</span>
+        <span class="method-mini-card">⑦毕其功于一役</span>
+        <span class="method-mini-card">⑧三阶段推进</span>
+        <span class="method-mini-card">⑨愈挫愈奋</span>
+        <span class="method-mini-card">⑩济弱扶倾</span>
       </div>
     </div>
   </section>
 
-  <!-- ============ CORE SKILLS ============ -->
-  <section class="section skills-section" id="skills">
+  <!-- ============ SKILLS DETAILS (ACCORDION) ============ -->
+  <section class="section details-section" id="details">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">十大方法论工具</span>
-        <h2 class="section-title">按需取用 · 灵活组合</h2>
-        <p class="section-desc">每一个方法都有明确的适用场景和不适用场景，不需要全套调用</p>
+        <span class="section-tag">十大工具</span>
+        <h2 class="section-title">方法论详解</h2>
+        <p class="section-desc">点击展开，查看完整方法论说明和原文引用</p>
       </div>
 
-      <div class="skills-grid">
+      <div class="accordion" id="skills-accordion">
 
-        <div class="skill-card" data-skill="know-hard-act-easy">
-          <div class="skill-card-header"><span class="skill-num">01</span><span class="skill-layer layer-tag-1">认识论</span></div>
-          <h3 class="skill-name">知难行易</h3>
-          <p class="skill-alias">Know Hard, Act Easy</p>
-          <p class="skill-desc">行动先于完美认知。真正的困难不在于"做"，而在于"知道该做什么"。遇到不确定时，先行动获取信息，不等完美方案。</p>
-          <div class="skill-quote">"知之非艰，行之惟艰，此古人之大谬也。"</div>
-          <div class="skill-footer"><span class="skill-scene">适用：分析瘫痪、犹豫不决、畏难不前</span></div>
-          <div class="skill-hover-overlay"><a href="skills/know-hard-act-easy/SKILL.md" class="overlay-link">查看详情 →</a></div>
+        <div class="accordion-item" id="skill-know-hard-act-easy">
+          <button class="accordion-header" aria-expanded="false">
+            <div class="accordion-title">
+              <span class="accordion-num">01</span>
+              <div>
+                <h3>知难行易</h3>
+                <span class="accordion-alias">Know Hard, Act Easy · 认识论</span>
+              </div>
+            </div>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-body">
+            <div class="accordion-content">
+              <p class="skill-lead">行动先于完美认知。真正的困难不在于"做"，而在于"知道该做什么"。遇到不确定时，先行动获取信息，不等完美方案。</p>
+              
+              <h4>核心原则</h4>
+              <ul>
+                <li>真正的"难"是认知上的难，不是行动上的难</li>
+                <li>先做起来，在行动中获取真实反馈</li>
+                <li>决策前先区分"我知道我不知道"和"我不知道我不知道"</li>
+              </ul>
+
+              <h4>适用场景</h4>
+              <p>分析瘫痪、犹豫不决、畏难不前、需求模糊、技术选型迷茫</p>
+
+              <h4>不适用场景</h4>
+              <p>高风险不可逆决策（手术、重大财务决策）、高度规范化流程</p>
+
+              <h4>原文引用</h4>
+              <blockquote>"知之非艰，行之惟艰，此古人之大谬也。" —— 孙中山《建国方略》（1917）</blockquote>
+              <blockquote>"吾心信其可行，则移山填海之难，终有成功之日。" —— 孙中山</blockquote>
+
+              <h4>配套工具</h4>
+              <p>→ 用「三阶段推进」设计行动节奏<br>
+              → 用「五权制衡」建立验证机制</p>
+            </div>
+          </div>
         </div>
 
-        <div class="skill-card" data-skill="east-west-synthesis">
-          <div class="skill-card-header"><span class="skill-num">02</span><span class="skill-layer layer-tag-1">认识论</span></div>
-          <h3 class="skill-name">融贯中西</h3>
-          <p class="skill-alias">East-West Synthesis</p>
-          <p class="skill-desc">不盲从外来方法，也不固守已有方式。取各家之长融为己用，但融合的前提是深入理解双方，而非浮光掠影。</p>
-          <div class="skill-quote">"固有的东西，如果是好的，当然是要保存，不好的才可以放弃。"</div>
-          <div class="skill-footer"><span class="skill-scene">适用：技术选型、架构设计、方案权衡</span></div>
-          <div class="skill-hover-overlay"><a href="skills/east-west-synthesis/SKILL.md" class="overlay-link">查看详情 →</a></div>
+        <div class="accordion-item" id="skill-east-west-synthesis">
+          <button class="accordion-header" aria-expanded="false">
+            <div class="accordion-title">
+              <span class="accordion-num">02</span>
+              <div>
+                <h3>融贯中西</h3>
+                <span class="accordion-alias">East-West Synthesis · 认识论</span>
+              </div>
+            </div>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-body">
+            <div class="accordion-content">
+              <p class="skill-lead">不盲从外来方法，也不固守已有方式。取各家之长融为己用，但融合的前提是深入理解双方，而非浮光掠影。</p>
+              
+              <h4>核心原则</h4>
+              <ul>
+                <li>先理解对方为什么这么做，再谈融合</li>
+                <li>融合是再创造，不是简单叠加</li>
+                <li>区分"形式"和"实质"，学实质而非形式</li>
+              </ul>
+
+              <h4>适用场景</h4>
+              <p>技术选型、架构设计、方案权衡、流程改进、外包/采购决策</p>
+
+              <h4>不适用场景</h4>
+              <p>需要快速标准化执行、没有足够时间深入研究理解的场景</p>
+
+              <h4>原文引用</h4>
+              <blockquote>"固有的东西，如果是好的，当然是要保存，不好的才可以放弃。" —— 孙中山《三民主义》（1924）</blockquote>
+              <blockquote>"我们要学外国，是要迎头赶上，不要向后跟着。" —— 孙中山</blockquote>
+
+              <h4>配套工具</h4>
+              <p>→ 用「三民框架」评估融合方案的利弊<br>
+              → 用「知难行易」避免过度研究空谈</p>
+            </div>
+          </div>
         </div>
 
-        <div class="skill-card" data-skill="three-principles-analysis">
-          <div class="skill-card-header"><span class="skill-num">03</span><span class="skill-layer layer-tag-2">治理方法</span></div>
-          <h3 class="skill-name">三民框架</h3>
-          <p class="skill-alias">Three Principles Analysis</p>
-          <p class="skill-desc">任何系统性方案可从三个维度审查——谁的（所有权）、谁治理（决策结构）、谁受益（价值分配）。三维一贯，缺一不可。</p>
-          <div class="skill-quote">"民有、民治、民享。"</div>
-          <div class="skill-footer"><span class="skill-scene">适用：系统设计评审、需求分析、架构决策</span></div>
-          <div class="skill-hover-overlay"><a href="skills/three-principles-analysis/SKILL.md" class="overlay-link">查看详情 →</a></div>
+        <div class="accordion-item" id="skill-three-principles-analysis">
+          <button class="accordion-header" aria-expanded="false">
+            <div class="accordion-title">
+              <span class="accordion-num">03</span>
+              <div>
+                <h3>三民框架</h3>
+                <span class="accordion-alias">Three Principles Analysis · 治理方法</span>
+              </div>
+            </div>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-body">
+            <div class="accordion-content">
+              <p class="skill-lead">任何系统性方案可从三个维度审查——谁所有、谁治理、谁受益。三维一贯，缺一不可。</p>
+              
+              <h4>核心原则</h4>
+              <ul>
+                <li><strong>民族</strong>（所有权）：谁拥有这个系统/方案的最终决策权？</li>
+                <li><strong>民权</strong>（治理权）：谁参与决策过程？机制是否公正？</li>
+                <li><strong>民生</strong>（受益权）：谁从这个方案中获益？成本如何分配？</li>
+              </ul>
+
+              <h4>适用场景</h4>
+              <p>系统设计评审、需求分析、架构决策、API 边界设计、数据权限设计</p>
+
+              <h4>不适用场景</h4>
+              <p>简单的一次性执行任务、个人独立决策场景</p>
+
+              <h4>原文引用</h4>
+              <blockquote>"民有、民治、民享。" —— 孙中山（借鉴林肯语）</blockquote>
+
+              <h4>配套工具</h4>
+              <p>→ 用「五权制衡」设计治理结构<br>
+              → 用「权能区分」明确执行边界</p>
+            </div>
+          </div>
         </div>
 
-        <div class="skill-card" data-skill="five-power-checks">
-          <div class="skill-card-header"><span class="skill-num">04</span><span class="skill-layer layer-tag-2">治理方法</span></div>
-          <h3 class="skill-name">五权制衡</h3>
-          <p class="skill-alias">Five Power Checks</p>
-          <p class="skill-desc">执行、规划、验证、选拔、监察——五种职能应当分离独立运行，建立系统性检查与平衡机制。</p>
-          <div class="skill-quote">"在外国的规模之上更加一层中国的特色。"</div>
-          <div class="skill-footer"><span class="skill-scene">适用：代码审查、质量保障、流程设计</span></div>
-          <div class="skill-hover-overlay"><a href="skills/five-power-checks/SKILL.md" class="overlay-link">查看详情 →</a></div>
+        <div class="accordion-item" id="skill-five-power-checks">
+          <button class="accordion-header" aria-expanded="false">
+            <div class="accordion-title">
+              <span class="accordion-num">04</span>
+              <div>
+                <h3>五权制衡</h3>
+                <span class="accordion-alias">Five Power Checks · 治理方法</span>
+              </div>
+            </div>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-body">
+            <div class="accordion-content">
+              <p class="skill-lead">五种职能应当分离独立运行：执行、规划、验证、选拔、监察。建立系统性检查与平衡机制。</p>
+              
+              <h4>核心原则</h4>
+              <ul>
+                <li>执行者不能审查自己的工作</li>
+                <li>规划权与执行权应分离（避免"计划赶不上变化"）</li>
+                <li>验证结果必须被真正使用才能产生价值</li>
+              </ul>
+
+              <h4>适用场景</h4>
+              <p>代码审查流程、质量保障体系、流程设计、权限管理、大型多人协作项目</p>
+
+              <h4>不适用场景</h4>
+              <p>快速原型验证、小团队高信任环境、个人项目</p>
+
+              <h4>原文引用</h4>
+              <blockquote>"在外国的规模之上更加一层中国的特色。" —— 孙中山（指五权分立）</blockquote>
+
+              <h4>配套工具</h4>
+              <p>→ 用「三民框架」评估权力结构的合理性<br>
+              → 用「知难行易」避免过度设计流程</p>
+            </div>
+          </div>
         </div>
 
-        <div class="skill-card" data-skill="power-capability-split">
-          <div class="skill-card-header"><span class="skill-num">05</span><span class="skill-layer layer-tag-2">治理方法</span></div>
-          <h3 class="skill-name">权能区分</h3>
-          <p class="skill-alias">Power-Capability Split</p>
-          <p class="skill-desc">明确区分决策权（属于用户）和执行力（属于执行者）。既不越权替用户做决定，也不推责在自己的能力范围内充分发挥。</p>
-          <div class="skill-quote">"用人民的四个政权，来管理政府的五个治权。"</div>
-          <div class="skill-footer"><span class="skill-scene">适用：角色分工、权限设计、人机协作边界</span></div>
-          <div class="skill-hover-overlay"><a href="skills/power-capability-split/SKILL.md" class="overlay-link">查看详情 →</a></div>
+        <div class="accordion-item" id="skill-power-capability-split">
+          <button class="accordion-header" aria-expanded="false">
+            <div class="accordion-title">
+              <span class="accordion-num">05</span>
+              <div>
+                <h3>权能区分</h3>
+                <span class="accordion-alias">Power-Capability Split · 治理方法</span>
+              </div>
+            </div>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-body">
+            <div class="accordion-content">
+              <p class="skill-lead">明确区分决策权（属于用户/资方）和执行力（属于执行者/AI）。既不越权替用户做决定，也不推责在自己的能力范围内充分发挥。</p>
+              
+              <h4>核心原则</h4>
+              <ul>
+                <li>AI 的职责是执行，不是决策</li>
+                <li>当 AI 发现决策权归属不清晰时，应当指出并请求明确</li>
+                <li>执行者有义务在权限范围内做到最好，但不应擅自超越</li>
+              </ul>
+
+              <h4>适用场景</h4>
+              <p>人机协作边界设计、API 设计、权限系统设计、团队角色分工</p>
+
+              <h4>不适用场景</h4>
+              <p>用户明确授权 AI 全权代理的场景、高度紧急无法及时反馈的场景</p>
+
+              <h4>原文引用</h4>
+              <blockquote>"用人民的四个政权，来管理政府的五个治权。" —— 孙中山</blockquote>
+
+              <h4>配套工具</h4>
+              <p>→ 用「三民框架」明确权力来源<br>
+              → 用「五权制衡」建立执行监督机制</p>
+            </div>
+          </div>
         </div>
 
-        <div class="skill-card" data-skill="awaken-and-unite">
-          <div class="skill-card-header"><span class="skill-num">06</span><span class="skill-layer layer-tag-3">革命战略</span></div>
-          <h3 class="skill-name">唤起民众</h3>
-          <p class="skill-alias">Awaken and Unite</p>
-          <p class="skill-desc">孤军奋战不可能成功。需要做两件事：唤起相关方理解问题并愿意参与；找到所有"以平等待我"的力量，建立统一战线。</p>
-          <div class="skill-quote">"必须唤起民众及联合世界上以平等待我之民族，共同奋斗。"</div>
-          <div class="skill-footer"><span class="skill-scene">适用：跨团队协作、方案推广、开源运营</span></div>
-          <div class="skill-hover-overlay"><a href="skills/awaken-and-unite/SKILL.md" class="overlay-link">查看详情 →</a></div>
+        <div class="accordion-item" id="skill-awaken-and-unite">
+          <button class="accordion-header" aria-expanded="false">
+            <div class="accordion-title">
+              <span class="accordion-num">06</span>
+              <div>
+                <h3>唤起民众</h3>
+                <span class="accordion-alias">Awaken and Unite · 革命战略</span>
+              </div>
+            </div>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-body">
+            <div class="accordion-content">
+              <p class="skill-lead">孤军奋战不可能成功。需要做两件事：唤起相关方理解问题并愿意参与；找到所有"以平等待我"的力量，建立统一战线。</p>
+              
+              <h4>核心原则</h4>
+              <ul>
+                <li>方案再好，没人理解就没法落地</li>
+                <li>"唤起"不是说服，是让对方看到自己的利益所在</li>
+                <li>统一战线需要识别真正的盟友和潜在的反对者</li>
+              </ul>
+
+              <h4>适用场景</h4>
+              <p>跨团队协作推进、方案推广、开源运营、技术选型投票、招聘与文化建设</p>
+
+              <h4>不适用场景</h4>
+              <p>高度机密或时间极度紧迫的任务、需要保密的决策</p>
+
+              <h4>原文引用</h4>
+              <blockquote>"必须唤起民众及联合世界上以平等待我之民族，共同奋斗。" —— 孙中山《总理遗嘱》（1925）</blockquote>
+
+              <h4>配套工具</h4>
+              <p>→ 用「三民框架」识别各方利益<br>
+              → 用「三阶段推进」设计推进节奏</p>
+            </div>
+          </div>
         </div>
 
-        <div class="skill-card" data-skill="single-stroke-revolution">
-          <div class="skill-card-header"><span class="skill-num">07</span><span class="skill-layer layer-tag-3">革命战略</span></div>
-          <h3 class="skill-name">毕其功于一役</h3>
-          <p class="skill-alias">Single-Stroke Revolution</p>
-          <p class="skill-desc">当多个维度的问题互相关联时，不要枝节片断地修补，而要一次性系统解决。避免走西方"先革命再改革"的弯路。</p>
-          <div class="skill-quote">"要把工业革命与社会革命，毕其功于一役。"</div>
-          <div class="skill-footer"><span class="skill-scene">适用：重构、迁移、技术债务清理</span></div>
-          <div class="skill-hover-overlay"><a href="skills/single-stroke-revolution/SKILL.md" class="overlay-link">查看详情 →</a></div>
+        <div class="accordion-item" id="skill-single-stroke-revolution">
+          <button class="accordion-header" aria-expanded="false">
+            <div class="accordion-title">
+              <span class="accordion-num">07</span>
+              <div>
+                <h3>毕其功于一役</h3>
+                <span class="accordion-alias">Single-Stroke Revolution · 革命战略</span>
+              </div>
+            </div>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-body">
+            <div class="accordion-content">
+              <p class="skill-lead">当多个维度的问题互相关联时，不要枝节片断地修补，而要一次性系统解决。避免走西方"先革命再改革"的弯路。</p>
+              
+              <h4>核心原则</h4>
+              <ul>
+                <li>识别问题的"根"而不是"枝"——找到那个解决了其他都会跟着解决的问题</li>
+                <li>集中资源单点突破，而不是分散兵力四处修补</li>
+                <li>需要判断"这是系统性问题还是偶发问题"</li>
+              </ul>
+
+              <h4>适用场景</h4>
+              <p>大规模重构、技术债务清理、系统迁移、遗留系统现代化、组织架构调整</p>
+
+              <h4>不适用场景</h4>
+              <p>资源极度有限需要渐进演进、风险不可控的高敏感系统</p>
+
+              <h4>原文引用</h4>
+              <blockquote>"要把工业革命与社会革命，毕其功于一役。" —— 孙中山</blockquote>
+
+              <h4>配套工具</h4>
+              <p>→ 用「知难行易」判断最难的那一步<br>
+              → 用「三阶段推进」设计执行节奏</p>
+            </div>
+          </div>
         </div>
 
-        <div class="skill-card" data-skill="three-phase-governance">
-          <div class="skill-card-header"><span class="skill-num">08</span><span class="skill-layer layer-tag-3">革命战略</span></div>
-          <h3 class="skill-name">三阶段推进</h3>
-          <p class="skill-alias">Three Phase Governance</p>
-          <p class="skill-desc">任何深刻变革不可能一步到位。经历三阶段：破旧立新期 → 教育培养期 → 制度自治期。急于跳过中间阶段，制度就无法扎根。</p>
-          <div class="skill-quote">"军政→训政→宪政"</div>
-          <div class="skill-footer"><span class="skill-scene">适用：新技术规范推行、团队转型、大型迁移</span></div>
-          <div class="skill-hover-overlay"><a href="skills/three-phase-governance/SKILL.md" class="overlay-link">查看详情 →</a></div>
+        <div class="accordion-item" id="skill-three-phase-governance">
+          <button class="accordion-header" aria-expanded="false">
+            <div class="accordion-title">
+              <span class="accordion-num">08</span>
+              <div>
+                <h3>三阶段推进</h3>
+                <span class="accordion-alias">Three Phase Governance · 革命战略</span>
+              </div>
+            </div>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-body">
+            <div class="accordion-content">
+              <p class="skill-lead">任何深刻变革不可能一步到位。经历三阶段：破旧立新期 → 教育培养期 → 制度自治期。急于跳过中间阶段，制度就无法扎根。</p>
+              
+              <h4>核心原则</h4>
+              <ul>
+                <li><strong>第一阶段</strong>：破旧立新，集中力量解决最紧迫问题</li>
+                <li><strong>第二阶段</strong>：教育培养，参与者逐渐掌握新规则</li>
+                <li><strong>第三阶段</strong>：制度自治，形成自我运转的机制</li>
+              </ul>
+
+              <h4>适用场景</h4>
+              <p>新技术规范推行、团队转型、大型迁移、并购整合、制度建设</p>
+
+              <h4>不适用场景</h4>
+              <p>已经成熟的常规运营、紧急危机响应</p>
+
+              <h4>原文引用</h4>
+              <blockquote>"军政→训政→宪政" —— 孙中山《建国大纲》（1924）</blockquote>
+
+              <h4>配套工具</h4>
+              <p>→ 用「知难行易」确定每阶段的突破口<br>
+              → 用「五权制衡」设计阶段性验收机制</p>
+            </div>
+          </div>
         </div>
 
-        <div class="skill-card" data-skill="rise-from-defeat">
-          <div class="skill-card-header"><span class="skill-num">09</span><span class="skill-layer layer-tag-4">精神纪律</span></div>
-          <h3 class="skill-name">愈挫愈奋</h3>
-          <p class="skill-alias">Rise from Defeat</p>
-          <p class="skill-desc">失败不是终点，是认识深化的过程。每次失败后不是放弃，而是总结经验、调整方法、重新出发。"既不可以失败而灰心，亦不能以困难而缩步。"</p>
-          <div class="skill-quote">"革命尚未成功，同志仍须努力。"</div>
-          <div class="skill-footer"><span class="skill-scene">适用：方案被否、多次失败、信心受挫</span></div>
-          <div class="skill-hover-overlay"><a href="skills/rise-from-defeat/SKILL.md" class="overlay-link">查看详情 →</a></div>
+        <div class="accordion-item" id="skill-rise-from-defeat">
+          <button class="accordion-header" aria-expanded="false">
+            <div class="accordion-title">
+              <span class="accordion-num">09</span>
+              <div>
+                <h3>愈挫愈奋</h3>
+                <span class="accordion-alias">Rise from Defeat · 精神纪律</span>
+              </div>
+            </div>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-body">
+            <div class="accordion-content">
+              <p class="skill-lead">失败不是终点，是认识深化的过程。每次失败后不是放弃，而是总结经验、调整方法、重新出发。</p>
+              
+              <h4>核心原则</h4>
+              <ul>
+                <li>区分"方法失败"和"方向失败"——前者调整方法，后者需要重新思考方向</li>
+                <li>每次挫折后必须形成可操作的下一步，而不是简单重复</li>
+                <li>韧性来自对失败模式的识别，不是来自意志力</li>
+              </ul>
+
+              <h4>适用场景</h4>
+              <p>方案被否后的重新设计、多次迭代不通过的困境、信心重建</p>
+
+              <h4>不适用场景</h4>
+              <p>不可逆的重大失败、资源已经耗尽的情况</p>
+
+              <h4>原文引用</h4>
+              <blockquote>"既不可以失败而灰心，亦不能以困难而缩步。" —— 孙中山</blockquote>
+              <blockquote>"革命尚未成功，同志仍须努力。" —— 孙中山《总理遗嘱》（1925）</blockquote>
+
+              <h4>配套工具</h4>
+              <p>→ 用「知难行易」分析失败的真实原因<br>
+              → 用「三民框架」重新审视方案基础假设</p>
+            </div>
+          </div>
         </div>
 
-        <div class="skill-card" data-skill="aid-the-weak">
-          <div class="skill-card-header"><span class="skill-num">10</span><span class="skill-layer layer-tag-4">精神纪律</span></div>
-          <h3 class="skill-name">济弱扶倾</h3>
-          <p class="skill-alias">Aid the Weak</p>
-          <p class="skill-desc">强者有责任帮助弱者。系统的公平性、对弱势用户的关怀、对边缘场景的覆盖，比单纯追求效率和性能更重要。为最弱势使用者设计。</p>
-          <div class="skill-quote">"聪明才智越大者，当服千万人之务，造千万人之福。"</div>
-          <div class="skill-footer"><span class="skill-scene">适用：可访问性、向下兼容、技术普惠</span></div>
-          <div class="skill-hover-overlay"><a href="skills/aid-the-weak/SKILL.md" class="overlay-link">查看详情 →</a></div>
+        <div class="accordion-item" id="skill-aid-the-weak">
+          <button class="accordion-header" aria-expanded="false">
+            <div class="accordion-title">
+              <span class="accordion-num">10</span>
+              <div>
+                <h3>济弱扶倾</h3>
+                <span class="accordion-alias">Aid the Weak · 精神纪律</span>
+              </div>
+            </div>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-body">
+            <div class="accordion-content">
+              <p class="skill-lead">强者有责任帮助弱者。系统的公平性、对弱势用户的关怀、对边缘场景的覆盖，比单纯追求效率和性能更重要。为最弱势使用者设计。</p>
+              
+              <h4>核心原则</h4>
+              <ul>
+                <li>"帮助"不是替代，是赋能——让对方自己站起来</li>
+                <li>在效率和公平之间，优先保障基本可达性</li>
+                <li>边缘场景往往揭示系统最深层的缺陷</li>
+              </ul>
+
+              <h4>适用场景</h4>
+              <p>可访问性设计（a11y）、国际化/本地化、向下兼容、技术普惠产品设计</p>
+
+              <h4>不适用场景</h4>
+              <p>性能敏感的实时系统、对安全性要求极高的基础设施</p>
+
+              <h4>原文引用</h4>
+              <blockquote>"聪明才智越大者，当服千万人之务，造千万人之福。" —— 孙中山</blockquote>
+
+              <h4>配套工具</h4>
+              <p>→ 用「三民框架」确保受益群体的公平性<br>
+              → 用「三阶段推进」设计赋能节奏</p>
+            </div>
+          </div>
         </div>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW TO USE ============ -->
+  <section class="section how-to-use-section" id="how-to-use">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">使用指南</span>
+        <h2 class="section-title">Clone 之后，怎么真正用起来？</h2>
+        <p class="section-desc">四种使用方式，总有一种适合你</p>
+      </div>
+
+      <div class="how-to-grid">
+        <div class="how-to-card">
+          <div class="how-to-icon">🤖</div>
+          <h3>方式一：对话中直接调用</h3>
+          <p class="how-to-desc">在对话中直接说明场景，让 AI 自动调用相关方法论</p>
+          <div class="how-to-example">
+            <div class="example-q">你说：</div>
+            <div class="example-text">"我要做一个积分体系，团队两个人吵得很凶，各有道理，该怎么分析？"</div>
+            <div class="example-a">AI 自动用「三民框架」+「知难行易」帮你分析</div>
+          </div>
+          <div class="how-to-step">
+            <strong>Step 1：</strong>确保 datong-skill 已加载到 AI 的上下文中
+          </div>
+          <div class="how-to-step">
+            <strong>Step 2：</strong>直接描述你的问题场景
+          </div>
+          <div class="how-to-step">
+            <strong>Step 3：</strong>AI 会识别适用的方法论并应用
+          </div>
+        </div>
+
+        <div class="how-to-card">
+          <div class="how-to-icon">📋</div>
+          <h3>方式二：按需查询单个方法论</h3>
+          <p class="how-to-desc">遇到具体问题时，针对性查询某个方法论</p>
+          <div class="how-to-example">
+            <div class="example-q">你说：</div>
+            <div class="example-text">"用五权制衡分析一下我们团队的代码审查流程"</div>
+            <div class="example-a">AI 加载五权制衡方法论，针对性分析</div>
+          </div>
+          <div class="how-to-step">
+            <strong>推荐：</strong>查看上方「按场景找方法论」区块，找到最匹配的方法论
+          </div>
+        </div>
+
+        <div class="how-to-card">
+          <div class="how-to-icon">⚡</div>
+          <h3>方式三：入口 Skill 路由</h3>
+          <p class="how-to-desc">通过「天下为公」入口 Skill，让 AI 自动判断使用哪个工具</p>
+          <div class="how-to-code">
+            <code>将 skills/tianxia-weigong/SKILL.md 内容作为 AI 的 system prompt 或 pre-issue prompt</code>
+          </div>
+          <div class="how-to-step">
+            <strong>入口 Skill 会：</strong>
+            <ul>
+              <li>根据你的问题描述判断场景</li>
+              <li>自动选择最合适的方法论组合</li>
+              <li>提示你使用方法的最佳时机</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="how-to-card">
+          <div class="how-to-icon">🔧</div>
+          <h3>方式四：作为工作流组件</h3>
+          <p class="how-to-desc">在复杂场景中组合多个方法论，形成完整工作流</p>
+          <div class="how-to-flow">
+            <div class="flow-step">1. 唤起民众 → <span>识别利益相关方</span></div>
+            <div class="flow-step">2. 三民框架 → <span>三维评估方案</span></div>
+            <div class="flow-step">3. 五权制衡 → <span>设计执行机制</span></div>
+            <div class="flow-step">4. 愈挫愈奋 → <span>遇阻时调整策略</span></div>
+          </div>
+          <div class="how-to-step">
+            <strong>提示：</strong>组合使用时请注意方法论的适用边界，不是越多越好
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -303,7 +768,9 @@
       <div class="section-header">
         <span class="section-tag">快速安装</span>
         <h2 class="section-title">一条命令，开始使用</h2>
-        <p class="section-desc">支持 Claude Code / Cursor / OpenClaw，开箱即用</p>
+        <p class="section-desc">
+          <a href="QUICKSTART.html" style="color: var(--color-primary);">→ 详细5分钟上手指南</a>
+        </p>
       </div>
 
       <div class="install-tabs">
@@ -324,26 +791,54 @@
 cd datong-skill
 claude --plugin-dir .</code></pre>
           </div>
-          <p class="install-note">设置别名持久加载：</p>
+          <p class="install-note">持久化加载（加入 <code>~/.zshrc</code> 或 <code>~/.bashrc</code>）：</p>
           <div class="code-block">
-            <pre><code># 加入 ~/.zshrc 或 ~/.bashrc
-alias claude='claude --plugin-dir /path/to/datong-skill'</code></pre>
+            <pre><code>alias claude-datong='claude --plugin-dir /path/to/datong-skill'
+
+# 使用时：
+claude-datong
+# 然后正常对话，AI 会自动加载 datong-skill 方法论</code></pre>
           </div>
         </div>
 
         <div class="install-panel" data-panel="openclaw">
+          <p class="install-intro">OpenClaw 有两种加载方式：</p>
+          
+          <h4>方式 A：作为 System Skill（推荐）</h4>
           <div class="code-block">
             <div class="code-header">
               <span class="code-dots"><span></span><span></span><span></span></span>
-              <span class="code-lang">JSON</span>
+              <span class="code-lang">配置</span>
             </div>
-            <pre><code>"skills": {
-  "load": {
-    "extraDirs": ["/path/to/datong-skill/skills"]
+            <pre><code># 在 OpenClaw 配置中添加 skills 路径：
+{
+  "skills": {
+    "load": {
+      "extraDirs": ["/path/to/datong-skill/skills"]
+    }
   }
 }</code></pre>
           </div>
-          <p class="install-note">或在 ClawHub 中搜索 <code>datong-skill</code> 一键安装</p>
+          <p class="install-note">然后告诉 AI："我现在加载了 datong-skill，遇到了 XXX 问题"</p>
+
+          <h4>方式 B：作为 System Prompt</h4>
+          <div class="code-block">
+            <div class="code-header">
+              <span class="code-dots"><span></span><span></span><span></span></span>
+              <span class="code-lang">Terminal</span>
+              <button class="code-copy" onclick="copyCode(this)">复制</button>
+            </div>
+            <pre><code># 将入口 Skill 内容加入 system prompt：
+cat skills/tianxia-weigong/SKILL.md</code></pre>
+          </div>
+          <p class="install-note">复制输出的内容，粘贴到 OpenClaw 的 system prompt 配置中</p>
+
+          <h4>方式 C：ClawHub（v0.2.0 即将支持）</h4>
+          <div class="code-block">
+            <pre><code># 即将支持一行命令安装：
+openclaw skill install datong-skill</code></pre>
+          </div>
+          <p class="install-note">订阅更新：<a href="https://github.com/EASYGOING45/datong-skill/releases" target="_blank">GitHub Releases</a></p>
         </div>
 
         <div class="install-panel" data-panel="cursor">
@@ -353,21 +848,10 @@ alias claude='claude --plugin-dir /path/to/datong-skill'</code></pre>
               <span class="code-lang">Bash</span>
               <button class="code-copy" onclick="copyCode(this)">复制</button>
             </div>
-            <pre><code>git clone https://github.com/EASYGOING45/datong-skill</code></pre>
+            <pre><code>git clone https://github.com/EASYGOING45/datong-skill
+cd datong-skill</code></pre>
           </div>
-        </div>
-      </div>
-
-      <div class="workflow-preview">
-        <h3>标准工作流示例</h3>
-        <div class="workflow-steps">
-          <div class="wf-step"><span class="wf-num">1</span><div class="wf-content"><h4>唤起民众</h4><p>识别利益相关方，唤起认知，建立联盟</p></div></div>
-          <div class="wf-arrow">→</div>
-          <div class="wf-step"><span class="wf-num">2</span><div class="wf-content"><h4>知难行易</h4><p>先行动获取反馈，不等完美方案</p></div></div>
-          <div class="wf-arrow">→</div>
-          <div class="wf-step"><span class="wf-num">3</span><div class="wf-content"><h4>五权制衡</h4><p>建立独立的验证和监察机制</p></div></div>
-          <div class="wf-arrow">→</div>
-          <div class="wf-step"><span class="wf-num">4</span><div class="wf-content"><h4>愈挫愈奋</h4><p>遇阻则复盘调整，重新出发</p></div></div>
+          <p class="install-note">Cursor 的 .cursorrules 或 system prompt 中引用方法论文件路径</p>
         </div>
       </div>
     </div>
@@ -386,7 +870,7 @@ alias claude='claude --plugin-dir /path/to/datong-skill'</code></pre>
             <strong>「大同 Skill」</strong>严格遵守方法论蒸馏的红线：学习的是孙中山先生的思维方式、行动策略和精神力量，<strong>不涉及</strong>任何政治立场、政党评价或制度优劣比较。
           </p>
           <p class="about-text">
-            每一条方法都有据可依——原文引用标注了篇名和年份（《建国方略》《三民主义》《建国大纲》总理遗嘱等），并明确限定了适用场景在<strong>软件工程、系统设计、团队协作</strong>等 AI Agent 工作领域。
+            每一条方法都有据可依——原文引用标注了篇名和年份（《建国方略》《三民主义》《建国大纲》总理遗嘱等），适用场景限定在<strong>软件工程、系统设计、团队协作</strong>等 AI Agent 工作领域。
           </p>
           
           <div class="red-line-box">
@@ -401,46 +885,16 @@ alias claude='claude --plugin-dir /path/to/datong-skill'</code></pre>
               </ul>
             </div>
           </div>
-
-          <!-- 孙中山先生肖像展示 -->
-          <div class="sun-portrait-display">
-            <div class="portrait-frame">
-              <img src="assets/logo_main.png" alt="孙中山先生" loading="lazy">
-            </div>
-            <div class="portrait-caption">
-              <strong>孙中山</strong>
-              <span>1866 — 1925</span>
-              <p>"革命尚未成功，同志仍须努力。"</p>
-            </div>
-          </div>
-
-          <!-- 中山纪念堂铭牌 -->
-          <div class="memorial-hall-tribute">
-            <svg class="hall-icon" viewBox="0 0 80 60" xmlns="http://www.w3.org/2000/svg">
-              <polygon points="40,5 5,35 20,35 40,18 60,35 75,35" fill="#1a5f7a" opacity="0.7"/>
-              <rect x="12" y="35" width="6" height="22" fill="#b83c2c" opacity="0.6"/>
-              <rect x="24" y="35" width="6" height="22" fill="#b83c2c" opacity="0.6"/>
-              <rect x="50" y="35" width="6" height="22" fill="#b83c2c" opacity="0.6"/>
-              <rect x="62" y="35" width="6" height="22" fill="#b83c2c" opacity="0.6"/>
-              <rect x="5" y="55" width="70" height="5" rx="1" fill="#1a5f7a" opacity="0.4"/>
-              <circle cx="40" cy="8" r="3" fill="#c9971a" opacity="0.9"/>
-            </svg>
-            <div class="tribute-text">
-              <strong>广州中山纪念堂</strong>
-              <span>1931年建成 · 吕彦直设计</span>
-              <span>宝蓝琉璃瓦 · 朱红柱 · 白石基座</span>
-            </div>
-          </div>
         </div>
 
         <div class="about-side">
           <div class="stat-card"><div class="stat-num">10</div><div class="stat-label">方法论工具</div></div>
-          <div class="stat-card"><div class="stat-num">3</div><div class="stat-label">标准工作流</div></div>
-          <div class="stat-card"><div class="stat-num">v0.1</div><div class="stat-label">当前版本</div></div>
+          <div class="stat-card"><div class="stat-num">4</div><div class="stat-label">层次结构</div></div>
+          <div class="stat-card"><div class="stat-num">v0.2</div><div class="stat-label">当前版本</div></div>
           <div class="stat-card"><div class="stat-num">MIT</div><div class="stat-label">开源许可</div></div>
           <div class="quote-card">
-            <p>"国家非一人之天下，非一家之天下，乃天下人之天下，天下为公。"</p>
-            <cite>—— 孙中山</cite>
+            <p>"天下为公。"</p>
+            <cite>—— 孙文</cite>
           </div>
         </div>
       </div>
@@ -455,37 +909,81 @@ alias claude='claude --plugin-dir /path/to/datong-skill'</code></pre>
           <span class="logo-icon">☯</span>
           <span class="logo-text">大同<span class="logo-accent">Skill</span></span>
           <p class="footer-tagline">"革命尚未成功，同志仍须努力。"</p>
-          <p class="footer-tagline-sub">—— 孙中山 · 总理遗嘱（1925）</p>
         </div>
         <div class="footer-links">
           <div class="footer-col">
-            <h4>方法论</h4>
-            <a href="#skills">十大工具</a>
-            <a href="#methodology">体系结构</a>
-            <a href="docs/method-overview.md">概览文档</a>
-          </div>
-          <div class="footer-col">
-            <h4>资源</h4>
-            <a href="#install">安装指南</a>
-            <a href="skills/workflows/SKILL.md">工作流</a>
-            <a href="docs/INTRO.md">项目介绍</a>
+            <h4>文档</h4>
+            <a href="#scenarios">按场景查找</a>
+            <a href="#methodology">方法论体系</a>
+            <a href="QUICKSTART.html">快速上手</a>
           </div>
           <div class="footer-col">
             <h4>项目</h4>
             <a href="https://github.com/EASYGOING45/datong-skill" target="_blank">GitHub</a>
             <a href="https://github.com/EASYGOING45/datong-skill/issues" target="_blank">反馈问题</a>
-            <a href="CHANGELOG.md">更新日志</a>
+            <a href="https://github.com/EASYGOING45/datong-skill/releases" target="_blank">更新日志</a>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
         <p class="footer-copy">© 2025-2026 datong-skill · MIT License · 维护者：EASYGOING45</p>
-        <p class="footer-credit">方法论灵感来源：孙中山先生著作（四十年革命生涯）</p>
       </div>
     </div>
     <div class="footer-decoration"><div class="footer-deco-bar"></div></div>
   </footer>
 
-  <script src="assets/js/main.js"></script>
+  <script>
+    // ============ NAV TOGGLE ============
+    const navToggle = document.getElementById('nav-toggle');
+    const mainNav = document.getElementById('main-nav');
+    navToggle.addEventListener('click', () => {
+      mainNav.classList.toggle('open');
+      navToggle.classList.toggle('active');
+    });
+
+    // ============ HEADER SCROLL ============
+    const header = document.getElementById('site-header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // ============ INSTALL TABS ============
+    document.querySelectorAll('.install-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.install-tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.install-panel').forEach(p => p.classList.remove('active'));
+        tab.classList.add('active');
+        document.querySelector(`.install-panel[data-panel="${tab.dataset.tab}"]`).classList.add('active');
+      });
+    });
+
+    // ============ COPY CODE ============
+    function copyCode(btn) {
+      const code = btn.closest('.code-block').querySelector('code');
+      navigator.clipboard.writeText(code.textContent).then(() => {
+        btn.textContent = '已复制!';
+        setTimeout(() => btn.textContent = '复制', 2000);
+      });
+    }
+
+    // ============ ACCORDION ============
+    document.querySelectorAll('.accordion-header').forEach(header => {
+      header.addEventListener('click', () => {
+        const isOpen = header.getAttribute('aria-expanded') === 'true';
+        
+        // Close all
+        document.querySelectorAll('.accordion-header').forEach(h => {
+          h.setAttribute('aria-expanded', 'false');
+          h.closest('.accordion-item').classList.remove('open');
+        });
+        
+        // Open clicked (if it was closed)
+        if (!isOpen) {
+          header.setAttribute('aria-expanded', 'true');
+          header.closest('.accordion-item').classList.add('open');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
