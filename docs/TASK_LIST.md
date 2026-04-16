@@ -21,7 +21,7 @@
 ## 待办（v0.2.0 规划）
 
 - [ ] **openclaw-integration** — 增加 OpenClaw Skill 安装支持（ClawHub / 直接加载 SKILL.md）
-- [ ] **quickstart-guide** — 编写快速上手指南，降低新用户使用门槛
+- [x] **quickstart-guide** — 编写快速上手指南，降低新用户使用门槛 ✅ (2026-04-16)
 - [x] **skill-enhancement** — 各 skill 补充「操作模板」和「决策树」等实用附件 ✅ (2026-04-16)
 - [ ] **windows-testing** — 补充 Windows 端 hook 验证测试
 - [x] **github-workflow** — GitHub Actions CI/CD 自动化验证 ✅ (2026-04-15)
