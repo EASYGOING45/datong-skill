@@ -20,7 +20,8 @@
 
 ## 待办（v0.2.0 规划）
 
-- [ ] **openclaw-integration** — 增加 OpenClaw Skill 安装支持（ClawHub / 直接加载 SKILL.md）
+- [x] **openclaw-integration** — ClawHub 元数据 + OpenClaw 安装文档 + README 更新 ✅ (2026-04-16)
+  - `clawhub.json` ✅ | `skill.json` ✅ | `OPENCLAW_USAGE.md` ✅ | README 更新 ✅ | 本地测试待主人手动验证
 - [x] **quickstart-guide** — 编写快速上手指南，降低新用户使用门槛 ✅ (2026-04-16)
 - [x] **skill-enhancement** — 各 skill 补充「操作模板」和「决策树」等实用附件 ✅ (2026-04-16)
 - [ ] **windows-testing** — 补充 Windows 端 hook 验证测试

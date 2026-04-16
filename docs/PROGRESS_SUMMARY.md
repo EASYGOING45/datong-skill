@@ -15,7 +15,7 @@
 | github-workflow | ✅ 已完成 | CI 4 jobs 全部通过（Ubuntu/macOS/Windows/JSON）|
 | skill-enhancement | ✅ 已完成 | 10/10 skills 全覆盖 decision-tree + template |
 | quickstart-guide | ✅ 已完成 | QUICKSTART.md + README 链接（2026-04-16）|
-| openclaw-integration | 📋 待办 | OpenClaw Skill 安装支持 |
+| openclaw-integration | ✅ 已完成(文件) | clawhub.json + skill.json + OPENCLAW_USAGE.md + README 更新；本地测试待主人手动 |
 | windows-testing | 📋 待办 | Windows hook 验证 |
 | methodology-audit | 📋 待办 | 各 skill self-review checklist |
 | publish-clawhub | 📋 待办 | 发布到 ClawHub |
@@ -32,6 +32,6 @@
 ---
 
 ## 巡检记录
-- **2026-04-16 13:30 CST**：TASK_quickstart-guide 完成并推送；v0.2.0 剩余 4 项待推进
+- **2026-04-16 17:30 CST**：TASK_openclaw-integration 文档文件完成（clawhub.json / skill.json / OPENCLAW_USAGE.md / README）；CI+Deploy 排队中；v0.2.0 剩余 windows-testing / methodology-audit / publish-clawhub（需 clawhub login）
 - **2026-04-15 晚间**：TASK_skill-enhancement 全部完成（10/10）；CI+Deploy 双绿
 - **2026-04-15 日间**：TASK_github-workflow 完成，CI 4 jobs 全通
