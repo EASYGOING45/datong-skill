@@ -191,6 +191,32 @@ bash tests/validate-structure.sh
 7. 告诉我验证是否通过。
 ```
 
+### OpenClaw 安装
+
+**方式 A：ClawHub（推荐）**
+
+```bash
+# 安装 datong-skill 到 OpenClaw
+clawhub install datong-skill
+
+# 安装后重启 OpenClaw 即可自动加载
+```
+
+安装完成后，所有 11 个方法论 skill 将自动可用，菲比会在相关场景自动路由到最适合的方法论。详见 [docs/OPENCLAW_USAGE.md](./docs/OPENCLAW_USAGE.md)。
+
+**方式 B：从 GitHub 直接加载**
+
+```bash
+# 克隆到本地 skills 目录
+git clone https://github.com/EASYGOING45/datong-skill.git ~/.openclaw/skills/datong-skill
+```
+
+**验证是否加载成功**：
+
+```bash
+npx clawhub inspect datong-skill
+```
+
 ## 使用方式
 
 安装后，每次会话开始时「天下为公」入口 skill 会自动注入，AI 将：

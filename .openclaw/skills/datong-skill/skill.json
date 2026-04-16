@@ -1,0 +1,29 @@
+{
+  "name": "datong-skill",
+  "version": "0.1.0",
+  "description": "「天下为公」方法论智慧 — 孙中山先生思维工具箱。10+ 方法论覆盖分析、治理、战略、精神四大维度，系统性提升 AI 分析力、设计力与韧性。",
+  "entrypoint": "skills/tianxia-weigong/SKILL.md",
+  "skills": [
+    "skills/tianxia-weigong/SKILL.md",
+    "skills/know-hard-act-easy/SKILL.md",
+    "skills/east-west-synthesis/SKILL.md",
+    "skills/three-principles-analysis/SKILL.md",
+    "skills/five-power-checks/SKILL.md",
+    "skills/power-capability-split/SKILL.md",
+    "skills/awaken-and-unite/SKILL.md",
+    "skills/single-stroke-revolution/SKILL.md",
+    "skills/three-phase-governance/SKILL.md",
+    "skills/rise-from-defeat/SKILL.md",
+    "skills/aid-the-weak/SKILL.md"
+  ],
+  "author": "EASYGOING45",
+  "license": "MIT",
+  "homepage": "https://github.com/EASYGOING45/datong-skill",
+  "keywords": [
+    "ai-agent",
+    "methodology",
+    "decision-making",
+    "system-design",
+    "sun-yat-sen"
+  ]
+}

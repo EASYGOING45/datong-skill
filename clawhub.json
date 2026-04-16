@@ -1,0 +1,81 @@
+{
+  "slug": "datong-skill",
+  "name": "大同Skill — 天下为公方法论",
+  "summary": "蒸馏孙中山先生四十年革命生涯的思维工具箱：知难行易、三民框架、五权制衡、唤起民众、愈挫愈奋等十大方法论，提升 AI 分析力、设计力与韧性。",
+  "tags": [
+    "ai-agent-skill",
+    "methodology",
+    "decision-making",
+    "system-design",
+    "productivity"
+  ],
+  "license": "MIT",
+  "skills": [
+    {
+      "slug": "tianxia-weigong",
+      "name": "天下为公 — 总入口",
+      "path": "skills/tianxia-weigong/SKILL.md",
+      "description": "总入口 skill，自动路由到最匹配的方法论"
+    },
+    {
+      "slug": "know-hard-act-easy",
+      "name": "知难行易",
+      "path": "skills/know-hard-act-easy/SKILL.md",
+      "description": "先行动获取信息，不等完美方案"
+    },
+    {
+      "slug": "east-west-synthesis",
+      "name": "融贯中西",
+      "path": "skills/east-west-synthesis/SKILL.md",
+      "description": "深入理解双方，取长融合而非浮光掠影"
+    },
+    {
+      "slug": "three-principles-analysis",
+      "name": "三民框架",
+      "path": "skills/three-principles-analysis/SKILL.md",
+      "description": "谁的、谁治理、谁受益——三维审视系统"
+    },
+    {
+      "slug": "five-power-checks",
+      "name": "五权制衡",
+      "path": "skills/five-power-checks/SKILL.md",
+      "description": "执行、规划、验证、选拔、监察五权分离"
+    },
+    {
+      "slug": "power-capability-split",
+      "name": "权能区分",
+      "path": "skills/power-capability-split/SKILL.md",
+      "description": "决策权归用户，执行力归 agent"
+    },
+    {
+      "slug": "awaken-and-unite",
+      "name": "唤起民众",
+      "path": "skills/awaken-and-unite/SKILL.md",
+      "description": "唤起相关方，联合平等力量"
+    },
+    {
+      "slug": "single-stroke-revolution",
+      "name": "毕其功于一役",
+      "path": "skills/single-stroke-revolution/SKILL.md",
+      "description": "系统性解决，不做枝节修补"
+    },
+    {
+      "slug": "three-phase-governance",
+      "name": "三阶段推进",
+      "path": "skills/three-phase-governance/SKILL.md",
+      "description": "破旧 → 培育 → 自治，不跳阶段"
+    },
+    {
+      "slug": "rise-from-defeat",
+      "name": "愈挫愈奋",
+      "path": "skills/rise-from-defeat/SKILL.md",
+      "description": "失败是认识深化，总结后重新出发"
+    },
+    {
+      "slug": "aid-the-weak",
+      "name": "济弱扶倾",
+      "path": "skills/aid-the-weak/SKILL.md",
+      "description": "为最弱者设计，能力越大责任越大"
+    }
+  ]
+}
