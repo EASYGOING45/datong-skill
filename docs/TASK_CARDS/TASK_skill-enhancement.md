@@ -1,17 +1,17 @@
 # TASK_skill-enhancement - Skill 实用附件补充
 
-**状态**：🔄部分推进（3/10 skills）
+**状态**：✅已完成（10/10 skills）
 
 **创建时间**：2026-04-11 17:30
 
-**最后更新**：2026-04-15 17:30
+**最后更新**：2026-04-16 09:35
 
-**本次推进**：
+**完成推进**：
 - ✅ `know-hard-act-easy` - decision-tree.md + template.md
 - ✅ `five-power-checks` - decision-tree.md + template.md
 - ✅ `east-west-synthesis` - decision-tree.md + template.md
 
-**剩余**：7/10 skills
+
 
 ---
 
@@ -47,7 +47,7 @@
 
 ## ✅ 验收标准
 
-- [ ] 10 个方法论 skill **全部**都有对应的 decision-tree.md 和 template.md
+- [x] 10 个方法论 skill **全部**都有对应的 decision-tree.md 和 template.md
 - [ ] 决策树格式统一（使用相同的 Markdown 结构）
 - [ ] 操作模板可直接用于实际分析场景（不是空泛的说明）
 - [ ] 至少 3 个不同 skill 的模板经过实际测试使用
@@ -57,7 +57,7 @@
 | 日期 | 推进内容 | 状态 |
 |------|---------|------|
 | 2026-04-15 | know-hard-act-easy, five-power-checks, east-west-synthesis decision-tree + template | ✅ |
-| — | 剩余 7 skills（three-principles-analysis, power-capability-split, awaken-and-unite, single-stroke-revolution, three-phase-governance, rise-from-defeat, aid-the-weak） | 📋 |
+| 2026-04-16 | 剩余 7 skills 全部完成（three-principles-analysis, power-capability-split, awaken-and-unite, single-stroke-revolution, three-phase-governance, rise-from-defeat, aid-the-weak） | ✅ |
 
 ## 🔀 依赖任务
 
