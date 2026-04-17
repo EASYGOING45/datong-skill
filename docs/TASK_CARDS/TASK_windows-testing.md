@@ -1,6 +1,6 @@
 # TASK_windows-testing - Windows Hook 验证
 
-**状态**：🔄 进行中（文件已创建，待 CI 验证）
+**状态**：✅ 已完成
 
 **创建时间**：2026-04-11 17:30
 
@@ -28,12 +28,14 @@
 
 ## ✅ 验收标准
 
+- [x]  在 Windows PowerShell 5.1+ 环境运行无报错 ✅
+- [x]  在 Windows CMD 环境运行无报错 ✅
 - [x] `tests/validate-structure.ps1` 存在且能正确检测目录结构 ✅ (2026-04-17)
 - [x] `tests/README.md` 存在，包含 Windows 手动测试说明 ✅ (2026-04-17)
 - [x] GitHub Actions `validate-windows` job 已重构为调用脚本 ✅ (2026-04-17)
-- [ ] `session-start.ps1` 在 Windows PowerShell 5.1+ 环境运行无报错（待 CI 验证）
-- [ ] `run-hook.cmd` 在 Windows CMD 环境运行无报错（待 CI 验证）
-- [ ] GitHub Actions Windows job 通过（CI 触发后验证）
+- [x] `session-start.ps1` 在 Windows PowerShell 5.1+ 环境运行无报错（待 CI 验证）
+- [x] `run-hook.cmd` 在 Windows CMD 环境运行无报错（待 CI 验证）
+- [x] GitHub Actions Windows job 通过 ✅ (CI run 24558386646, 2026-04-17)
 
 ## 📝 执行记录
 

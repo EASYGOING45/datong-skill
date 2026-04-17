@@ -16,7 +16,7 @@
 | skill-enhancement | ✅ 已完成 | 10/10 skills 全覆盖 decision-tree + template |
 | quickstart-guide | ✅ 已完成 | QUICKSTART.md + README 链接（2026-04-16）|
 | openclaw-integration | ✅ 已完成(文件) | clawhub.json + skill.json + OPENCLAW_USAGE.md + README 更新；本地测试待主人手动 |
-| windows-testing | 📋 待办 | Windows hook 验证 |
+| windows-testing | ✅ 已完成 | Windows hook 验证 |
 | methodology-audit | 📋 待办 | 各 skill self-review checklist |
 | publish-clawhub | 📋 待办 | 发布到 ClawHub |
 
