@@ -32,28 +32,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Run structure validation
         shell: pwsh
-        run: |
-          $errors = 0
-          $requiredFiles = @(
-            "package.json", "LICENSE", "README.md", "CHANGELOG.md", "PLAN.md", ".gitignore",
-            "hooks\hooks.json", ".claude-plugin\plugin.json", ".cursor-plugin\plugin.json",
-            "skills\tianxia-weigong\SKILL.md", "skills\workflows\SKILL.md", "agents\five-power-reviewer.md"
-          )
-          foreach ($f in $requiredFiles) {
-            if (!(Test-Path $f)) { Write-Host "MISSING: $f"; $errors++ } else { Write-Host "OK: $f" }
-          }
-          $skills = @(
-            "know-hard-act-easy", "east-west-synthesis", "three-principles-analysis",
-            "five-power-checks", "power-capability-split", "awaken-and-unite",
-            "single-stroke-revolution", "three-phase-governance", "rise-from-defeat", "aid-the-weak"
-          )
-          foreach ($s in $skills) {
-            $sk = "skills\$s\SKILL.md"
-            if (!(Test-Path $sk)) { Write-Host "MISSING: $sk"; $errors++ } else { Write-Host "OK: $sk" }
-            $orig = "skills\$s\original-texts.md"
-            if (!(Test-Path $orig)) { Write-Host "MISSING: $orig"; $errors++ } else { Write-Host "OK: $orig" }
-          }
-          if ($errors -eq 0) { Write-Host "All checks passed!"; exit 0 } else { Write-Host "Found $errors issue(s)"; exit 1 }
+        run: pwsh -NoLogo -NoProfile -ExecutionPolicy Bypass -File tests/validate-structure.ps1
 
   json-validate:
     name: Validate JSON configs
