@@ -16,7 +16,8 @@ if ([string]::IsNullOrEmpty($ProjectRoot)) {
     if ([string]::IsNullOrEmpty($ScriptDir)) {
         $ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
     }
-    $ProjectRoot = $ScriptDir
+    # Script lives in tests/, so parent is the repo root
+    $ProjectRoot = Split-Path -Parent $ScriptDir
 }
 
 function Test-FileOrDir {
