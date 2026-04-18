@@ -2,9 +2,9 @@
 
 ## 项目信息
 - **版本**：v0.1.0 已发布 | v0.2.0 推进中
-- **最新 commit**：`35f5765` docs: update TASK_LIST.md - mark quickstart-guide completed
+- **最新 commit**：`c48d73e` docs: mark TASK_windows-testing completed after CI verification pass
 - **GitHub**：https://github.com/EASYGOING45/datong-skill
-- **最后更新**：2026-04-16 13:30 CST
+- **最后更新**：2026-04-17 17:30 CST
 
 ---
 
